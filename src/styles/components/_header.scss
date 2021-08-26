@@ -1,0 +1,80 @@
+.header {
+  width: 100%;
+  background: $color-dark;
+
+  &__wrapper {
+    width: 1800px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 2.5%;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+
+    & > * {
+      margin-right: 20px;
+    }
+
+    .hdr-link {
+      cursor: pointer;
+      transition: all 0.2s;
+      &-selected {
+        font-weight: bold;
+        color: $color-primary;
+      }
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    .hdr-div {
+      height: 40px;
+      width: 1px;
+      background-color: $color-primary;
+    }
+  }
+
+  &__actions {
+    display: flex;
+
+    & > * {
+      margin-right: 20px;
+    }
+  }
+
+  &__mobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+
+    .hdr-menu {
+      font-size: 30px;
+      color: $color-primary;
+      cursor: pointer;
+    }
+  }
+
+  @include media("<=1300px") {
+    &__actions {
+      display: none;
+    }
+  }
+
+  @include media("<=tablet") {
+    &__links {
+      display: none;
+    }
+    &__mobile {
+      display: flex;
+    }
+  }
+}

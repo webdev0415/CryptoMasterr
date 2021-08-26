@@ -1,0 +1,33 @@
+.switch {
+  border: 2px solid $color-blue;
+  color: white;
+  border-radius: 30px;
+  width: max-content;
+
+  &__options {
+    display: flex;
+    align-items: center;
+    height: 40px;
+  }
+
+  &__option {
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    @include noSelect;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &__selected {
+      background-color: $color-blue;
+      opacity: 1 !important;
+      cursor: default !important;
+    }
+  }
+}

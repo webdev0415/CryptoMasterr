@@ -1,0 +1,66 @@
+.governance {
+  &__head {
+    display: flex;
+    width: 100%;
+
+    .gov-mrk {
+      width: 45%;
+      margin-right: 20px;
+    }
+
+    .gov-info {
+      width: 55%;
+      background: rgba(16, 24, 30, 0.8);
+      border: 1px solid #ffffff;
+      box-sizing: border-box;
+      border-radius: 20px;
+      padding: 20px;
+
+      .gov-info-desc {
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        font-size: 2.4rem;
+        color: $color-primary;
+      }
+
+      ul {
+        margin-bottom: 20px;
+        margin-left: 18px;
+      }
+    }
+  }
+
+  .gov-card {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.05),
+        rgba(255, 255, 255, 0.05)
+      ),
+      #10181e;
+    border-radius: 20px;
+    padding: 20px;
+
+    .gov-card-head {
+      color: $color-primary;
+      margin-bottom: 10px;
+    }
+    .gov-card-bold {
+      font-size: 2.4rem;
+      font-weight: bold;
+    }
+    .gov-card-sub {
+      margin-top: 10px;
+      font-size: 1.8rem;
+    }
+  }
+
+  &__overview {
+    display: flex;
+    & > * {
+      flex: 1;
+      margin-right: 20px;
+    }
+  }
+}

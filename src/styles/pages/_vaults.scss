@@ -1,0 +1,52 @@
+.vaults {
+  .vaults-tbl-card {
+    display: flex;
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 20px;
+
+    &__info,
+    &__actions {
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 20px;
+      padding: 20px;
+
+      span {
+        display: flex;
+        margin-bottom: 20px;
+        h4 {
+          margin-left: 10px;
+        }
+      }
+    }
+
+    &__info {
+      width: 60%;
+      margin-right: 30px;
+
+      ol {
+        margin-left: 18px;
+
+        li {
+          margin-bottom: 20px;
+        }
+      }
+
+      .v-info-actions {
+        display: flex;
+        flex-wrap: wrap;
+        .button {
+          margin-right: 20px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    &__actions {
+      width: 40%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}

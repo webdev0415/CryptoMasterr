@@ -1,0 +1,86 @@
+.farms {
+  &__add {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.05),
+        rgba(255, 255, 255, 0.05)
+      ),
+      rgba(16, 24, 30, 0.8);
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+
+    .button {
+      width: 40%;
+    }
+
+    @include media("<=980px") {
+      flex-direction: column;
+      .button {
+        margin-top: 20px;
+        width: max-content;
+      }
+    }
+  }
+
+  .farms-tbl-card {
+    padding: 0 20px;
+    display: flex;
+    margin-bottom: 20px;
+
+    & > * {
+      margin-right: 20px;
+      border-radius: 20px;
+    }
+    span {
+      display: flex;
+      margin-bottom: 20px;
+      h4 {
+        margin-left: 10px;
+      }
+    }
+
+    &__card {
+      background: rgba(0, 0, 0, 0.3);
+      flex: 1;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &:last-child {
+        margin: 0;
+      }
+
+      .frm-crd-row {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        & > * {
+          flex: 1;
+        }
+      }
+    }
+  }
+
+  .farms-tbl-addr {
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 20px;
+    margin-bottom: 20px;
+    span {
+      display: flex;
+      h4 {
+        margin-left: 10px;
+      }
+    }
+  }
+}
